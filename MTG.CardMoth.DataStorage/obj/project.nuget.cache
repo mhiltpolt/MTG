@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "NyrBMWP/874OL1foPFDk8LFjPQaA9A1F0lSVAIysuoCXwZYxBzxGt327SO0PLtZeFxvjyKxCg3c52CzF4baGnA==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.DataStorage\\MTG.CardMoth.DataStorage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mhilt\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.1\\system.data.sqlite.core.1.0.113.1.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

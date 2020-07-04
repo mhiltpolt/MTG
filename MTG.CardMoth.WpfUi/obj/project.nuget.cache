@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "5E7AlHU60Fj9O29S3dnNlbP1pcUuAukjWVpIyHU7bI6qp/oMS9aqqPwvdElChyrqkexCLE13tFr5mDkU3CR0zQ==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.WpfUi\\MTG.CardMoth.WpfUi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mhilt\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.1\\system.data.sqlite.core.1.0.113.1.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.net.http.json\\3.2.1\\system.net.http.json.3.2.1.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

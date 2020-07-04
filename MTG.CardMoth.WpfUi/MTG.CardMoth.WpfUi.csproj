@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MTG.CardMoth.ApiCaller\MTG.CardMoth.ApiCaller.csproj" />
+    <ProjectReference Include="..\MTG.CardMoth.DataStorage\MTG.CardMoth.DataStorage.csproj" />
+  </ItemGroup>
+
+</Project>

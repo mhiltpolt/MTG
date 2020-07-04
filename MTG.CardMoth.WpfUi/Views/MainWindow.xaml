@@ -1,0 +1,67 @@
+﻿<Window x:Class="MTG.CardMoth.WpfUi.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MTG.CardMoth.WpfUi"
+        mc:Ignorable="d"
+        Background="#333333"
+        Title="MTG.CardMoth" Height="600" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="#990099" BorderThickness="5" Grid.RowSpan="3"/>
+            <Label
+                Grid.Row="0" Margin="16"
+                Foreground="#999999" HorizontalAlignment="Center" VerticalAlignment="Center"
+                FontSize="42" FontWeight="Bold">Sets</Label>
+            <Button 
+            Grid.Row="1" Margin="16" 
+            Command="{Binding LoadSetsCommand}" 
+            FontSize="20" FontWeight="Bold">Load Sets</Button>
+            <ComboBox 
+            Grid.Row="2" Margin="16" 
+            ItemsSource="{Binding Path=Sets, UpdateSourceTrigger=PropertyChanged}" 
+            DisplayMemberPath="Name"
+            SelectedItem="{Binding Path=CurrentSet}"
+            FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="#990099" BorderThickness="5" Grid.RowSpan="3"/>
+            <Label
+                Grid.Row="0" Margin="16"
+                Foreground="#999999" HorizontalAlignment="Center" VerticalAlignment="Center"
+                FontSize="42" FontWeight="Bold">Cards</Label>
+            <Button 
+            Grid.Row="1" Margin="16" 
+            Command="{Binding LoadCardsCommand}" 
+            FontSize="20" FontWeight="Bold">Load Cards</Button>
+            <ComboBox 
+            Grid.Row="2" Margin="16" 
+            ItemsSource="{Binding Path=CurrentSet.Cards, UpdateSourceTrigger=PropertyChanged}" 
+            DisplayMemberPath="Name"
+            
+            FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</Window>

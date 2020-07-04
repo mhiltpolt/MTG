@@ -1,0 +1,10 @@
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\bin\Debug\netcoreapp3.1\MTG.CardMoth.Data.db
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\bin\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.deps.json
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\bin\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.dll
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\obj\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.csprojAssemblyReference.cache
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\obj\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.AssemblyInfoInputs.cache
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\obj\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.AssemblyInfo.cs
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\bin\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.pdb
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\obj\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.csproj.CoreCompileInputs.cache
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\obj\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.dll
+C:\Code\MTG.CardMoth\MTG.CardMoth.DataStorage\obj\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.pdb

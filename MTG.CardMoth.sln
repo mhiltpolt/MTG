@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTG.CardMoth.ApiCaller", "MTG.CardMoth.ApiCaller\MTG.CardMoth.ApiCaller.csproj", "{1E4D9965-E0A1-4C7F-92C0-E1BCA5F9C4FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTG.CardMoth.DataStorage", "MTG.CardMoth.DataStorage\MTG.CardMoth.DataStorage.csproj", "{D318D2A5-E7CC-4516-AC2C-04865DDECF4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTG.CardMoth.WpfUi", "MTG.CardMoth.WpfUi\MTG.CardMoth.WpfUi.csproj", "{0E821350-CD69-48CA-B505-9EC6EFBD6430}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E4D9965-E0A1-4C7F-92C0-E1BCA5F9C4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4D9965-E0A1-4C7F-92C0-E1BCA5F9C4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4D9965-E0A1-4C7F-92C0-E1BCA5F9C4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4D9965-E0A1-4C7F-92C0-E1BCA5F9C4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D318D2A5-E7CC-4516-AC2C-04865DDECF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D318D2A5-E7CC-4516-AC2C-04865DDECF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D318D2A5-E7CC-4516-AC2C-04865DDECF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D318D2A5-E7CC-4516-AC2C-04865DDECF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0D9322E-4D75-4130-A80C-B16FF556736A}
+	EndGlobalSection
+EndGlobal
