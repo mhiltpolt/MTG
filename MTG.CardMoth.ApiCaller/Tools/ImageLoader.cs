@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,18 +9,28 @@ namespace MTG.CardMoth.ApiCaller.Tools
 {
     internal class ImageLoader
     {
-        internal async Task<Byte[]> LoadFromUriAsync(string uri)
+        private HttpHelper _httpHelper => new HttpHelper();
+
+        internal Task<Byte[]> LoadFromUriAsync(string uri, EImageType imageType)
         {
-            using (WebClient client = new WebClient())
+            try
             {
-                try
+                if (!string.IsNullOrWhiteSpace(uri) && imageType == EImageType.VectorGraphic)
                 {
-                    return string.IsNullOrWhiteSpace(uri) ? new Byte[0] : await client.DownloadDataTaskAsync(uri);
+                    return _httpHelper.LoadVectorGraphic(uri);
                 }
-                catch (Exception e)
+                else if (!string.IsNullOrWhiteSpace(uri) && imageType == EImageType.Image)
                 {
-                    throw e;
+                    return _httpHelper.LoadImage(uri);
                 }
+                else
+                {
+                    return new Task<byte[]>(() => { return new byte[0]; });
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
             }
         }
     }

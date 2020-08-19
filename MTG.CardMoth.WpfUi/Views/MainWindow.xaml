@@ -63,5 +63,6 @@
             FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center"/>
         </Grid>
 
+        <Image Source="{Binding Image, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.RowSpan="2" Margin="30"/>
     </Grid>
 </Window>

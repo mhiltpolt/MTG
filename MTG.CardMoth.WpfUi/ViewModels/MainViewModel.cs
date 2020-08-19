@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace MTG.CardMoth.WpfUi.ViewModels
 {
@@ -37,8 +38,26 @@ namespace MTG.CardMoth.WpfUi.ViewModels
         public SetEntity CurrentSet
         {
             get { return _currentSet; }
-            set { _currentSet = value; }
+            set 
+            { 
+                _currentSet = value;
+                OnPropertyChanged(nameof(CurrentSet));
+                Image = value.Icon;
+            }
         }
+
+        private byte[] _image;
+
+        public byte[] Image
+        {
+            get { return _image; }
+            set 
+            { 
+                _image = value;
+                OnPropertyChanged(nameof(Image));
+            }
+        }
+
 
 
         public RelayCommand LoadSetsCommand { get; private set; }

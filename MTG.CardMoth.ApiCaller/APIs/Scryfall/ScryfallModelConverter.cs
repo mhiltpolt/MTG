@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using System.Windows.Navigation;
 
 namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
 {
@@ -20,8 +19,6 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
         internal async Task<CardEntity> ConvertCardAsync(CardJsonModel card)
         {
             HttpHelper helper = new HttpHelper();
-            //Task<byte[]> image = _imageLoader.LoadFromUriAsync(card.image_uris?.large);
-            //Task<byte[]> artwork = _imageLoader.LoadFromUriAsync(card.image_uris?.art_crop);
             try
             {
 
@@ -75,7 +72,7 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
 
         internal async Task<SetEntity> ConvertSetAsync(SetJsonModel set)
         {
-            Task<byte[]> icon = _imageLoader.LoadFromUriAsync(set.icon_svg_uri);
+            Task<byte[]> icon = _imageLoader.LoadFromUriAsync(set.icon_svg_uri, EImageType.VectorGraphic);
 
             return new SetEntity
             {
@@ -91,10 +88,7 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
 
         internal async Task<List<SetEntity>> ConvertSetListAsync(List<SetJsonModel> sets)
         {
-            IEnumerable<Task<SetEntity>> tasks = sets.Select(s =>
-            {
-                return ConvertSetAsync(s);
-            });
+            IEnumerable<Task<SetEntity>> tasks = sets.Select(s => { return ConvertSetAsync(s); });
             SetEntity[] result = await Task.WhenAll(tasks);
 
             return result.ToList();

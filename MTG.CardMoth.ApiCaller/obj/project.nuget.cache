@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ELy+ih2URvfNK/Ozqzn0f3E6NXB5ctnFvzl/ZiUdAAdCOmC6UDyYmc0BXWbzF5/ENduyiloVMnFkWo7uZ4INlg==",
+  "dgSpecHash": "ijqLkBAggjgWzHfecB6vsN1fPgoGaMvjQ/CXB5OY6j/y5I5lVzaDSgntLcOT8DLZu1FCoZ4h5qqovpf6mQeTvA==",
   "success": true,
   "projectFilePath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.ApiCaller\\MTG.CardMoth.ApiCaller.csproj",
   "expectedPackageFiles": [
@@ -9,8 +9,7 @@
     "C:\\Users\\mhilt\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.1\\system.data.sqlite.core.1.0.113.1.nupkg.sha512",
     "C:\\Users\\mhilt\\.nuget\\packages\\system.net.http.json\\3.2.1\\system.net.http.json.3.2.1.nupkg.sha512",
     "C:\\Users\\mhilt\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
-    "C:\\Users\\mhilt\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\mhilt\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }
