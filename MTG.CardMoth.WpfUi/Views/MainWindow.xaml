@@ -56,13 +56,14 @@
             Command="{Binding LoadCardsCommand}" 
             FontSize="20" FontWeight="Bold">Load Cards</Button>
             <ComboBox 
-            Grid.Row="2" Margin="16" 
-            ItemsSource="{Binding Path=CurrentSet.Cards, UpdateSourceTrigger=PropertyChanged}" 
+            Grid.Row="2" Margin="16"
+            ItemsSource="{Binding Path=Cards, UpdateSourceTrigger=PropertyChanged}" 
             DisplayMemberPath="Name"
-            
+            SelectedItem="{Binding Path=CurrentCard}"
             FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center"/>
         </Grid>
 
-        <Image Source="{Binding Image, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.RowSpan="2" Margin="30"/>
+        <Image Source="{Binding Path=CurrentSet.Icon}" Grid.Column="1" Grid.Row="0" Margin="30"/>
+        <Image Source="{Binding Path=CurrentCard.Image}" Grid.Column="1" Grid.Row="1" Margin="30"/>
     </Grid>
 </Window>

@@ -30,7 +30,24 @@ namespace MTG.CardMoth.DataStorage.DataAccess.Repos
 
         public static async Task SaveSetAsync(List<SetEntity> sets)
         {
-            sets.ForEach(s => SaveSetAsync(s));
+            sets.ForEach(async s => await SaveSetAsync(s));
+        }
+
+        public static int GetCardCount(SetEntity set)
+        {
+            using (IDbConnection con = DbProvider.GetDbConnection())
+            {
+                try
+                {
+                    return con.ExecuteScalar<int>(@"Select Count(CardID) 
+                                                FROM Cards
+                                                Where SetID == @SetID", set);
+                }
+                catch(Exception e)
+                {
+                    throw e;
+                }
+            }
         }
     }
 }

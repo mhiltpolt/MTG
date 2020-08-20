@@ -6,15 +6,13 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Svg" Version="3.1.1" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MTG.CardMoth.DataStorage\MTG.CardMoth.DataStorage.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\MTG.CardMoth.Utils\MTG.CardMoth.Utils.csproj" />
   </ItemGroup>
 
 </Project>

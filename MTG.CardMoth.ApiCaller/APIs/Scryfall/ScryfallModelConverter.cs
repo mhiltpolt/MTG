@@ -1,6 +1,7 @@
 ﻿using MTG.CardMoth.ApiCaller.APIs.Scryfall.Models;
-using MTG.CardMoth.ApiCaller.Tools;
 using MTG.CardMoth.DataStorage.Models;
+using MTG.CardMoth.Utils;
+using MTG.CardMoth.Utils.Enums;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -16,64 +17,36 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
     {
         private ScryfallModelFinder _finder => new ScryfallModelFinder();
         private ImageLoader _imageLoader => new ImageLoader();
-        internal async Task<CardEntity> ConvertCardAsync(CardJsonModel card)
+        internal async Task<CardEntity> ConvertCard(CardJsonModel card)
         {
-            HttpHelper helper = new HttpHelper();
-            try
-            {
-
-
-            Task<byte[]> image = helper.LoadImage(card.image_uris?.large);
-            Task<byte[]> artwork = helper.LoadImage(card.image_uris?.art_crop);
-            
-            return new CardEntity
-            {
-                CardID = card.id,
-                Name = card.Name,
-                ManaCost = card.mana_cost,
-                CMC = (int)card.cmc,
-                TypeLine = card.type_line,
-                OracleText = card.oracle_text,
-                FlavorText = card.flavor_text,
-                Power = card.power,
-                Toughness = card.toughness,
-                Rarity = card.rarity,
-                Reserved = card.reserved,
-                Artist = card.artist,
-                Image = await image,
-                Artwork = await artwork,
-                URI = card.Uri
-            };
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
+                return new CardEntity
+                {
+                    CardID = card.id,
+                    Name = card.Name,
+                    ManaCost = card.mana_cost,
+                    CMC = (int)card.cmc,
+                    TypeLine = card.type_line,
+                    OracleText = card.oracle_text,
+                    FlavorText = card.flavor_text,
+                    Power = card.power,
+                    Toughness = card.toughness,
+                    Rarity = card.rarity,
+                    Reserved = card.reserved,
+                    Artist = card.artist,
+                    URI = card.Uri
+                };
         }
 
-        internal async Task<List<CardEntity>> ConvertCardListAsync(List<CardJsonModel> cards)
+        internal async Task<List<CardEntity>> ConvertCardListAsync(List<CardJsonModel> cards, int failCount = 0)
         {
-            IEnumerable<Task<CardEntity>> Tasks = cards.Select(c =>
-            {
-                Debug.Print(cards.IndexOf(c).ToString());
-                return ConvertCardAsync(c);
-            });
+            List<Task<CardEntity>> Tasks = cards.Select(c => { return ConvertCard(c); }).ToList();
             Task<CardEntity[]> resultTask = Task.WhenAll(Tasks);
-            try
-            {
-                CardEntity[] result = await resultTask;
-                return result.ToList();
-            }
-            catch (Exception e)
-            {
-                throw resultTask.Exception;
-            }
+
+            return (await resultTask).ToList();
         }
 
         internal async Task<SetEntity> ConvertSetAsync(SetJsonModel set)
         {
-            Task<byte[]> icon = _imageLoader.LoadFromUriAsync(set.icon_svg_uri, EImageType.VectorGraphic);
-
             return new SetEntity
             {
                 SetID = set.id,
@@ -81,7 +54,6 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
                 Code = set.code,
                 ReleaseDate = DateTime.Parse(set.released_at),
                 SetType = set.set_type,
-                Icon = await icon,
                 URI = set.uri
             };
         }
@@ -89,9 +61,9 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
         internal async Task<List<SetEntity>> ConvertSetListAsync(List<SetJsonModel> sets)
         {
             IEnumerable<Task<SetEntity>> tasks = sets.Select(s => { return ConvertSetAsync(s); });
-            SetEntity[] result = await Task.WhenAll(tasks);
+            Task<SetEntity[]> resultTask = Task.WhenAll(tasks);
 
-            return result.ToList();
+            return (await resultTask).ToList();
         }
     }
 }

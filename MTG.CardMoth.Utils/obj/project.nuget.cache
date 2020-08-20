@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "1dRKLIvtn2YV9v8I4VStr7Eq4jUFGq6RWZQmnCNtXdcdD5lZTYQK0lSyqCsPBY9+vMIH8lfLwLuFMu2L+WV2Iw==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\MTG.CardMoth.Utils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mhilt\\.nuget\\packages\\fizzler\\1.2.0\\fizzler.1.2.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\runtime.osx.10.10-x64.corecompat.system.drawing\\5.8.64\\runtime.osx.10.10-x64.corecompat.system.drawing.5.8.64.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\svg\\3.1.1\\svg.3.1.1.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
+    "C:\\Users\\mhilt\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MTG.CardMoth.ApiCaller.Tools
+namespace MTG.CardMoth.Utils
 {
-    internal class HttpHelper
+    public class HttpHelper
     {
         private static HttpClient _client = new HttpClient();
 
-        internal async Task<string> GetHttpResponseStringAsync(string uri)
+        public async Task<string> GetHttpResponseStringAsync(string uri)
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
 
@@ -29,7 +30,7 @@ namespace MTG.CardMoth.ApiCaller.Tools
             }
         }
 
-        internal async Task<Byte[]> LoadImage(string uri)
+        public async Task<byte[]> LoadImage(string uri)
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
 
@@ -37,18 +38,17 @@ namespace MTG.CardMoth.ApiCaller.Tools
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    MemoryStream imageStream = new MemoryStream();
-                    await response.Content.CopyToAsync(imageStream);
-                    return imageStream.ToArray();
+                    return await response.Content.ReadAsByteArrayAsync();
                 }
                 else
                 {
+                    Debug.Print(response.StatusCode.ToString());
                     throw new WebException($"{response.StatusCode} {response.ReasonPhrase} {response.Content}");
                 }
             }
         }
 
-        internal async Task<Byte[]> LoadVectorGraphic(string uri)
+        public async Task<byte[]> LoadVectorGraphic(string uri)
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
 

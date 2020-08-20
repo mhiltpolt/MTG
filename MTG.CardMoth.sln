@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTG.CardMoth.DataStorage", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTG.CardMoth.WpfUi", "MTG.CardMoth.WpfUi\MTG.CardMoth.WpfUi.csproj", "{0E821350-CD69-48CA-B505-9EC6EFBD6430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTG.CardMoth.Utils", "MTG.CardMoth.Utils\MTG.CardMoth.Utils.csproj", "{8CE7B14F-2BDF-4D06-BA8B-6BCE9FE85FF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E821350-CD69-48CA-B505-9EC6EFBD6430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE7B14F-2BDF-4D06-BA8B-6BCE9FE85FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE7B14F-2BDF-4D06-BA8B-6BCE9FE85FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE7B14F-2BDF-4D06-BA8B-6BCE9FE85FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE7B14F-2BDF-4D06-BA8B-6BCE9FE85FF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

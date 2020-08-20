@@ -1,6 +1,7 @@
 ﻿using MTG.CardMoth.ApiCaller.APIs.Scryfall;
 using MTG.CardMoth.DataStorage.Models;
 using MTG.CardMoth.WpfUi.Commands;
+using MTG.CardMoth.WpfUi.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,12 +25,14 @@ namespace MTG.CardMoth.WpfUi.ViewModels
                 OnPropertyChanged(nameof(Sets));
             }
         }
+
+        private ObservableCollection<CardEntity> _cards;
         public ObservableCollection<CardEntity> Cards
         {
-            get { return new ObservableCollection<CardEntity>(CurrentSet.Cards); }
-            set
+            get { return _cards; }
+            set 
             {
-                Cards = value;
+                _cards = value;
                 OnPropertyChanged(nameof(Cards));
             }
         }
@@ -42,23 +45,19 @@ namespace MTG.CardMoth.WpfUi.ViewModels
             { 
                 _currentSet = value;
                 OnPropertyChanged(nameof(CurrentSet));
-                Image = value.Icon;
             }
         }
 
-        private byte[] _image;
-
-        public byte[] Image
+        private CardEntity _currentCard;
+        public CardEntity CurrentCard
         {
-            get { return _image; }
-            set 
-            { 
-                _image = value;
-                OnPropertyChanged(nameof(Image));
+            get { return _currentCard; }
+            set
+            {
+                _currentCard = value;
+                OnPropertyChanged(nameof(CurrentCard));
             }
         }
-
-
 
         public RelayCommand LoadSetsCommand { get; private set; }
         public RelayCommand LoadCardsCommand { get; private set; }
@@ -83,6 +82,7 @@ namespace MTG.CardMoth.WpfUi.ViewModels
         private async Task LoadCards(object obj)
         {
             CurrentSet.Cards = await _controller.GetCardsFromSet(CurrentSet);
+            Cards = new ObservableCollection<CardEntity>(CurrentSet.Cards);
         }
 
         private bool CanLoadCards(object obj)

@@ -1,0 +1,9 @@
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\bin\Debug\netcoreapp3.1\MTG.CardMoth.Utils.deps.json
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\bin\Debug\netcoreapp3.1\MTG.CardMoth.Utils.dll
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\bin\Debug\netcoreapp3.1\MTG.CardMoth.Utils.pdb
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\obj\Debug\netcoreapp3.1\MTG.CardMoth.Utils.csprojAssemblyReference.cache
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\obj\Debug\netcoreapp3.1\MTG.CardMoth.Utils.AssemblyInfoInputs.cache
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\obj\Debug\netcoreapp3.1\MTG.CardMoth.Utils.AssemblyInfo.cs
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\obj\Debug\netcoreapp3.1\MTG.CardMoth.Utils.dll
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\obj\Debug\netcoreapp3.1\MTG.CardMoth.Utils.pdb
+C:\Code\MTG.CardMoth\MTG.CardMoth.Utils\obj\Debug\netcoreapp3.1\MTG.CardMoth.Utils.csproj.CoreCompileInputs.cache

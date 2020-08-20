@@ -1,6 +1,6 @@
 ﻿using MTG.CardMoth.ApiCaller.APIs.Scryfall.Models;
-using MTG.CardMoth.ApiCaller.Tools;
 using MTG.CardMoth.DataStorage.Models;
+using MTG.CardMoth.Utils;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -20,6 +20,12 @@ namespace MTG.CardMoth.ApiCaller.APIs.Scryfall
         {
             string content = await Helper.GetHttpResponseStringAsync(@"https://api.scryfall.com/cards/random");
 
+            return JsonConvert.DeserializeObject<CardJsonModel>(content);
+        }
+
+        internal async Task<CardJsonModel> FindCardAsync(string uri)
+        {
+            string content = await Helper.GetHttpResponseStringAsync(uri);
             return JsonConvert.DeserializeObject<CardJsonModel>(content);
         }
 

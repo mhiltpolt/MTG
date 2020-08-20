@@ -31,7 +31,7 @@ namespace MTG.CardMoth.DataStorage.DataAccess.Repos
 
         public static async Task SaveCardAsync(List<CardEntity> cards)
         {
-            cards.ForEach(c => SaveCardAsync(c));
+            cards.ForEach(async c => await SaveCardAsync(c));
         }
     }
 }

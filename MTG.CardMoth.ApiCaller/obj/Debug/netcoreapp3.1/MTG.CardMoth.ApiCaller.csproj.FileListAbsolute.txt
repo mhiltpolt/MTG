@@ -7,7 +7,9 @@ C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\bin\Debug\netcoreapp3.1\MTG.CardMoth
 C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\bin\Debug\netcoreapp3.1\MTG.CardMoth.ApiCaller.pdb
 C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\bin\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.dll
 C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\bin\Debug\netcoreapp3.1\MTG.CardMoth.DataStorage.pdb
-C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\obj\Debug\netcoreapp3.1\MTG.CardMoth.ApiCaller.csproj.CoreCompileInputs.cache
 C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\obj\Debug\netcoreapp3.1\MTG.CardMoth.ApiCaller.csproj.CopyComplete
 C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\obj\Debug\netcoreapp3.1\MTG.CardMoth.ApiCaller.dll
 C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\obj\Debug\netcoreapp3.1\MTG.CardMoth.ApiCaller.pdb
+C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\obj\Debug\netcoreapp3.1\MTG.CardMoth.ApiCaller.csproj.CoreCompileInputs.cache
+C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\bin\Debug\netcoreapp3.1\MTG.CardMoth.Utils.dll
+C:\Code\MTG.CardMoth\MTG.CardMoth.ApiCaller\bin\Debug\netcoreapp3.1\MTG.CardMoth.Utils.pdb

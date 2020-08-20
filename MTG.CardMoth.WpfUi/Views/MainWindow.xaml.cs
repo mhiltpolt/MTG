@@ -32,10 +32,5 @@ namespace MTG.CardMoth.WpfUi.Views
             InitializeComponent();
             DataContext = new MainViewModel();
         }
-
-        private void SaveToDbClick(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

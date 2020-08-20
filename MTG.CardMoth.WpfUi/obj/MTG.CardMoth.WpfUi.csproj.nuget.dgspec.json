@@ -33,6 +33,9 @@
             "projectReferences": {
               "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.DataStorage\\MTG.CardMoth.DataStorage.csproj": {
                 "projectPath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.DataStorage\\MTG.CardMoth.DataStorage.csproj"
+              },
+              "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\MTG.CardMoth.Utils.csproj": {
+                "projectPath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\MTG.CardMoth.Utils.csproj"
               }
             }
           }
@@ -49,6 +52,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "Svg": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
@@ -119,6 +126,68 @@
             "System.Data.SQLite.Core": {
               "target": "Package",
               "version": "[1.0.113.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\MTG.CardMoth.Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\MTG.CardMoth.Utils.csproj",
+        "projectName": "MTG.CardMoth.Utils",
+        "projectPath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\MTG.CardMoth.Utils.csproj",
+        "packagesPath": "C:\\Users\\mhilt\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\MTG.CardMoth\\MTG.CardMoth.Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mhilt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packages.stride3d.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Svg": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [
